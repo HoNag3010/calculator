@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <section>
+        <div class="wrapper">
+            <input id="screen" disabled>
+            <section class="calc-buttons">
+                <div class="calc-button-row">
+                    <button onclick="clearDisplay()" class="calc-button calc-button-function " id="clearCal">
+                        AC
+                    </button>
+                    <button onclick="negative()" class="calc-button calc-button-function">
+                        +/-
+                    </button>
+                    <button onclick="percentage()" class="calc-button calc-button-function">
+                        %
+                    </button>
+                    <button onclick="appendToDisplay('/')" class="calc-button calc-button-calculation">
+                        &divide;
+                    </button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button onclick="appendToDisplay('7')" class="calc-button calc-button-number">
+                        7
+                    </button>
+                    <button onclick="appendToDisplay('8')" class="calc-button calc-button-number">
+                        8
+                    </button>
+                    <button onclick="appendToDisplay('9')" class="calc-button calc-button-number">
+                        9
+                    </button>
+                    <button onclick="appendToDisplay('*')" class="calc-button calc-button-calculation">
+                        X
+                    </button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button onclick="appendToDisplay('4')" class="calc-button calc-button-number">
+                        4
+                    </button>
+                    <button onclick="appendToDisplay('5')" class="calc-button calc-button-number">
+                        5
+                    </button>
+                    <button onclick="appendToDisplay('6')" class="calc-button calc-button-number">
+                        6
+                    </button>
+                    <button onclick="appendToDisplay('-')" class="calc-button calc-button-calculation">
+                        -
+                    </button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button onclick="appendToDisplay('1')" class="calc-button calc-button-number">
+                        1
+                    </button>
+                    <button onclick="appendToDisplay('2')" class="calc-button calc-button-number">
+                        2
+                    </button>
+                    <button onclick="appendToDisplay('3')" class="calc-button calc-button-number">
+                        3
+                    </button>
+                    <button onclick="appendToDisplay('+')" class="calc-button calc-button-calculation">
+                        +
+                    </button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button onclick="appendToDisplay('0')" class="calc-button calc-button-double">
+                        0
+                    </button>
+                    <button onclick="appendToDisplay('.')" class="calc-button calc-button-number">
+                        .
+                    </button>
+                    <button onclick="calculate()" class="calc-button calc-button-calculation">
+                        =
+                    </button>
+                </div>
+            </section>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>

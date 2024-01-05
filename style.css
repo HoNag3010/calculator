@@ -1,0 +1,108 @@
+html{
+    background: linear-gradient(rgb(255, 108, 108), cyan, lightgreen, #ff6c6c);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    align-items: center;
+    font-display: swap;
+    height: inherit;
+}
+
+.wrapper{
+    color: white;
+    border: 1px solid white;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.9);
+    height: 540px;
+    width: 400px;
+    border-radius: 35px;
+    padding: 30px 40px;
+}
+
+#screen{
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+    color: white;
+    background: rgba(0, 0, 0, 0.000001);
+    border: none;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    transition: background-color .6s ease;
+}
+
+.calc-button:hover, .calc-button:active{
+    filter: brightness(150%);
+    transition: filter .3s ease;    
+}
+
+.calc-button-function{
+    background: #a5a5a5;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    flex-basis: 20%;
+    height: 65px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.calc-button-calculation{
+    background: #ff9f0a;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    flex-basis: 20%;
+    height: 65px;
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+}
+
+.calc-button-calculation:hover, .calc-button-calculation:active{
+    filter: none;
+    background: #fcc78d;
+}
+
+.calc-button-number{
+    background: #333333;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    flex-basis: 20%;
+    height: 65px;
+    font-family: inherit;
+    font-size: 20px;
+    color: white
+}
+
+.calc-button-double{
+    background: #333333;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    flex-basis: 46%;
+    height: 65px;
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+}
+
